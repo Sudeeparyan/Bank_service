@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "0af1e9ce-54bf-40ae-b49e-49c3ebf26d5c",
+		"name": "Bank Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Coimbatore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223344\",\r\n        \"balance\": 160000.0,\r\n        \"date_of_birth\": \"16 Feb 1994\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User1\",\r\n        \"id\": \"111\",\r\n        \"last_name\": \"lastname1\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"123L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Account 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Account 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Coimbatore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223354\",\r\n        \"balance\": 160000.0,\r\n        \"date_of_birth\": \"16 Feb 1994\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User1\",\r\n        \"id\": \"111\",\r\n        \"last_name\": \"lastname1\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"123L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account 1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Bangalore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223345\",\r\n        \"balance\": 100000.0,\r\n        \"date_of_birth\": \"1994-02-16T15:53:00+05:30\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User2\",\r\n        \"id\": \"113\",\r\n        \"last_name\": \"lastname2\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"456L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Balance Account 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/balance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Balance Account 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/balance",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account 1 Cash Deposit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Bangalore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223345\",\r\n        \"balance\": 100000.0,\r\n        \"date_of_birth\": \"1994-02-16T15:53:00+05:30\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User2\",\r\n        \"id\": 113,\r\n        \"last_name\": \"lastname2\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"456L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/cash/deposit?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"cash",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account 1 Cash Withdraw",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Bangalore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223345\",\r\n        \"balance\": 100000.0,\r\n        \"date_of_birth\": \"1994-02-16T15:53:00+05:30\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User2\",\r\n        \"id\": 113,\r\n        \"last_name\": \"lastname2\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"456L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/cash/withdraw?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"cash",
+						"withdraw"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account 2 Cash Deposit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Bangalore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223345\",\r\n        \"balance\": 100000.0,\r\n        \"date_of_birth\": \"1994-02-16T15:53:00+05:30\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User2\",\r\n        \"id\": 113,\r\n        \"last_name\": \"lastname2\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"456L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/cash/deposit?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"cash",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account 2 Cash Withdraw",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Address\": \"Bangalore\",\r\n        \"Nationality\": \"Indian\",\r\n        \"aadhar_id\": \"11223345\",\r\n        \"balance\": 100000.0,\r\n        \"date_of_birth\": \"1994-02-16T15:53:00+05:30\",\r\n        \"fathers_name\": \"test\",\r\n        \"first_name\": \"User2\",\r\n        \"id\": 113,\r\n        \"last_name\": \"lastname2\",\r\n        \"mothers_name\": \"test\",\r\n        \"pan_id\": \"456L\",\r\n        \"payee_list\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/cash/withdraw?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"cash",
+						"withdraw"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Payee to First Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"account_id\": \"113\",\r\n                \"id\": \"payee1\",\r\n                \"ifsc_code\": \"ICIC0012345\",\r\n                \"name\": \"user123\",\r\n                \"nickname\": \"usernickname\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/payee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"payee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payee from First Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/payee/payee1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"payee",
+						"payee1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cash transfer 1 to 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/111/cash/transfer/payee1?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"111",
+						"cash",
+						"transfer",
+						"payee1"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Payee to Second Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"account_id\": \"111\",\r\n                \"id\": \"payee1\",\r\n                \"ifsc_code\": \"ICIC0012345\",\r\n                \"name\": \"user123\",\r\n                \"nickname\": \"usernickname\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/payee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"payee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cash transfer 2 to 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/cash/transfer/payee1?amount=10000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"cash",
+						"transfer",
+						"payee1"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Payee from Second Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/account/113/payee/payee1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"account",
+						"113",
+						"payee",
+						"payee1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

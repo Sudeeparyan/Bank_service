@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sample-bank-frontend"
+version = "0.1.0"
+description = ""
+authors = ["Karthick Shanmuga Rao <karthick.shanmuga@solitontech.com>"]
+readme = "README.md"
+packages = [{include = "sample_bank_frontend", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dash = "^2.9.3"
+dash-bootstrap-components = "^1.4.1"
+requests = "^2.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
